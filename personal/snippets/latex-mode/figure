@@ -1,0 +1,10 @@
+#contributor : Iker de Icaza
+#name : \begin{figure} ... \end{figure}
+# --
+\begin{figure}[${1:h!}]
+  \begin{center}
+   \includegraphics[width=$2\textwidth]{${3:archive}}
+   \caption[$4]{$4 $5}
+   \label{fig:$3}
+  \end{center}
+\end{figure}

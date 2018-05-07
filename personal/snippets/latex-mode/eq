@@ -1,0 +1,6 @@
+#contributor : Iker De Icaza
+#name : \begin{equation} ... \end{equation}
+# --
+\begin{equation}\label{eq:$1}
+$0
+\end{equation}

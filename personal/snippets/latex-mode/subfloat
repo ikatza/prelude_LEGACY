@@ -1,0 +1,15 @@
+#contributor : Iker de Icaza
+#name : \begin{figure} subfloat \end{figure}
+# --
+\begin{figure}[${1:h!}]
+   \centering 
+   \subfloat[${2:caption}][$2 $3 \label{fig:$4}]{
+     \includegraphics[width=${5:0.48}\textwidth]{${6:archive}}
+   } 
+   \subfloat[${7:caption}][$7 $8 \label{fig:$9}]{
+     \includegraphics[width=${10:0.48}\textwidth]{${11:archive}}
+   }
+   \caption[$12]{$12 $13}
+   \label{fig:$14}
+\end{figure}
+

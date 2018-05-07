@@ -1,0 +1,15 @@
+#contributor : Iker de Icaza
+#name : \begin{wrapfigure} ... \end{wrapfigure}
+# --
+\begin{wrapfigure}[]{${1:R}}{$2\textwidth}
+  \vspace{${3:-20pt}}
+  \begin{center}
+   \includegraphics[width=$4\textwidth]{${5:archive}}
+   \vspace{$3}
+  \end{center}
+  \caption{$6}
+  \label{$7}
+  \vspace{${8:-8pt}} 
+\end{wrapfigure}
+
+

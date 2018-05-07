@@ -1,0 +1,15 @@
+#contributor : Iker de Icaza
+#name : \begin{table} ... \end{table}
+# --
+\begin{table}[${1:h!}] 
+\begin{center} 
+\scalebox{${2:1}}{
+\begin{tabular}{|c|c|}
+  \hline
+$6& \\\ \hline
+\end{tabular}
+}
+\caption[$3]{$3 $4}
+\label{tab:$5}
+\end{center}
+\end{table}

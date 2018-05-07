@@ -1,0 +1,4 @@
+#contributor : Iker de Icaza
+#name : bold font
+# --
+\textbf{$1}

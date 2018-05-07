@@ -1,0 +1,4 @@
+#contributor : Iker de Icaza
+#name : {\color{}text}
+# --
+{\color{${1:red}}$2} $0
