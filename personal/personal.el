@@ -426,6 +426,10 @@ With a negative prefix argument NUMBER, move forward NUMBER closed brackets."
             (hs-minor-mode t)))
 
 
+(require 'multi-line)
+(global-set-key (kbd "C-c ;") 'multi-line)
+
+
 ;; 1). Use compile-again to run the same compile as the last time
 ;; automatically, no prompt. If there is no last time, or there is a
 ;; prefix argument, it acts like M-x compile.
