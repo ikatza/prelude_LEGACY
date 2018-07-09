@@ -59,7 +59,6 @@
     beacon
     browse-kill-ring
     crux
-    dash
     discover-my-major
     diff-hl
     diminish
@@ -75,8 +74,8 @@
     god-mode
     grizzl
     guru-mode
+    hl-todo
     imenu-anywhere
-    ov
     projectile
     magit
     move-text

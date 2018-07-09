@@ -207,7 +207,6 @@ By default most of the modules that ship with Prelude are not loaded. For more i
 (require 'prelude-js)
 ;; (require 'prelude-latex)
 (require 'prelude-lisp)
-;; (require 'prelude-mediawiki)
 (require 'prelude-org)
 (require 'prelude-perl)
 ;; (require 'prelude-python)
@@ -681,8 +680,8 @@ you don't like that simply add this to your personal config:
 
 ### Poor ido matching performance on large datasets
 
-Prelude swaps the default `ido` flex matching with the more powerful
-[ido-flx](https://github.com/lewang/flx).
+Prelude's `ido` module swaps the default `ido` flex matching with the
+more powerful [ido-flx](https://github.com/lewang/flx).
 
 The sorting algorithm `flx` uses is more complex, but yields better results.
 
