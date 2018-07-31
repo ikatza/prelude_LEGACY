@@ -12,11 +12,12 @@ library to the mix. The final product offers an easy to use Emacs
 configuration for Emacs newcomers and lots of additional power for
 Emacs power users.
 
-Prelude is compatible **ONLY with GNU Emacs 24.4+**. In general you're
+Prelude is compatible **ONLY with GNU Emacs 25.1+**. In general you're
 advised to always run Prelude with the latest Emacs - currently
-**25.2**.
+**26.1**.
 
 You can support the development of Prelude via
+[PayPal](https://www.paypal.me/bbatsov),
 [Salt](https://bountysource.com/teams/prelude),
 [Patreon](https://www.patreon.com/bbatsov) and
 [Liberapay](https://liberapay.com/bbatsov/donate).
@@ -380,13 +381,13 @@ It provides an easy way to navigate and switch projects. Take a look at its exte
 to get a feel for everything you can do with Projectile.
 
 Prelude adds an extra keymap prefix `s-p` (`s` stands for
-`Super`) in addition to the standard one `C-c p`. By default on Windows keyboard
+`Super`) in addition to the standard one `C-c C-p`. By default on Windows keyboard
 `Super` is mapped to the `Windows` key and on macOS keyboards `Super` is mapped
 to the `Command` key.
 
 If you ever forget any of Projectile's keybindings just do a:
 
-<kbd>C-c p C-h</kbd> or <kbd>s-p C-h</kbd>
+<kbd>C-c C-p C-h</kbd> or <kbd>s-p C-h</kbd>
 
 Alternatively you can just press <kbd>s-p</kbd> and wait for a moment
 for `which-key` to kick in and show you the available keybindings.
