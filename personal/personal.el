@@ -2,8 +2,11 @@
 
 ;;;; Code:
 
-;; disable guru-mode
+;; disable prelude guru-mode
 (setq prelude-guru nil)
+
+;; do not automatically cleanup white space on save
+(setq prelude-clean-whitespace-on-save nil)
 
 ;; reload emacs configuration
 (defun reload-init-file ()
@@ -39,7 +42,7 @@
 
 ;;(setq latex-run-command "xelatex")
 
-;; set XeTeX mode in TeX/LaTeX
+;; set XeLaTeX mode in TeX/LaTeX
 (add-hook 'LaTeX-mode-hook
           (lambda()
             (add-to-list 'TeX-command-list '("XeLaTeX" "%`xelatex%(mode)%' %t" TeX-run-TeX nil t))
@@ -404,7 +407,7 @@ With a negative prefix argument NUMBER, move forward NUMBER closed brackets."
 ;; ;;(add-hook 'sh-mode-hook         'hs-minor-mode)
 
 
-
+;; code folding
 (add-hook 'c-mode-common-hook
           (lambda()
             (local-set-key (kbd "C-c <C-SPC>")   'hs-toggle-hiding)
@@ -431,7 +434,7 @@ With a negative prefix argument NUMBER, move forward NUMBER closed brackets."
             (hs-minor-mode t)))
 
 
-(require 'multi-line)
+(prelude-require-package 'multi-line)
 (global-set-key (kbd "C-c ;") 'multi-line)
 
 
@@ -449,7 +452,7 @@ With a negative prefix argument NUMBER, move forward NUMBER closed brackets."
 ;; code in the *compilation* buffer, use M-n/p to navigate every error
 ;; in *compilation* buffer, Enter in the error line to jump to the
 ;; line in your code code.
-(require 'compile)
+(prelude-require-package 'compile)
 (setq compilation-last-buffer nil)
 (defun compile-again (ARG)
   "Run the same compile as the last time.
