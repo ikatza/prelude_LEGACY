@@ -5,6 +5,11 @@
 ;; disable guru-mode
 (setq prelude-guru nil)
 
+;; reload emacs configuration
+(defun reload-init-file ()
+  (interactive)
+  (load-file "~/.emacs.d/init.el"))
+
 (global-undo-tree-mode 0)
 
 ;;;; Python stuff:
