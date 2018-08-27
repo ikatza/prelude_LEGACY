@@ -21,11 +21,11 @@
 
 
 ;;; yasnippet
-;;; should be loaded before auto complete so that they can work together
-(prelude-require-package 'yasnippet)
+;; remember to symlink the folders!
+(prelude-require-packages '(yasnippet yasnippet-snippets))
 (setq yas-snippet-dirs
       '("~/.emacs.d/personal/snippets"                 ;; personal snippets
-        "~/.emacs.d/snippets/snippets"
+        "~/.emacs.d/snippets"
         ))
 (yas-global-mode +1)
 (define-key yas-minor-mode-map (kbd "<tab>") nil)
