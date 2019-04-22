@@ -309,10 +309,16 @@ With a negative prefix argument NUMBER, move forward NUMBER closed brackets."
 ;; (setq calendar-location-name "Mexico City")
 
 
-;;Latitude and longitude of Brighton
-(setq calendar-latitude 50.86)
-(setq calendar-longitude -0.08)
-(setq calendar-location-name "Brighton")
+;; ;;Latitude and longitude of Brighton
+;; (setq calendar-latitude 50.86)
+;; (setq calendar-longitude -0.08)
+;; (setq calendar-location-name "Brighton")
+
+
+;;Latitude and longitude of Fermilab
+(setq calendar-latitude 41.5)
+(setq calendar-longitude -88.1)
+(setq calendar-location-name "Fermilab")
 
 
 
