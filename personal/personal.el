@@ -346,8 +346,9 @@ With a negative prefix argument NUMBER, move forward NUMBER closed brackets."
 
 ;; themes
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-;;(prelude-require-package 'theme-changer)
+(prelude-require-packages '(theme-changer anti-zenburn-theme))
 (require 'theme-changer)
+(require 'anti-zenburn-theme)
 ;;(change-theme 'solarized-light 'solarized-dark)
 ;;(change-theme 'jonadabian-slate 'underwater)
 ;;(change-theme 'jonadabian-slate 'twilight-anti-bright)
