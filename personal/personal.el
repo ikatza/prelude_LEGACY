@@ -68,6 +68,8 @@
 ;;to display time
 (display-time)
 
+(set-default-font "Monaco 15")
+
 ;; cuda files treated like c++
 (add-to-list 'auto-mode-alist '("\\.cu$" . c++-mode))
 
