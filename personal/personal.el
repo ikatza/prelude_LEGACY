@@ -13,7 +13,16 @@
   (interactive)
   (load-file "~/.emacs.d/init.el"))
 
-(global-undo-tree-mode 0)
+;; undo tree mode
+;; turn on everywhere
+;;  C-x u to run undo-tree-visualize which opens a second buffer
+;;  displaying a tree view of your undo history in a buffer
+(global-undo-tree-mode 1)
+;; make ctrl-z undo
+(global-set-key (kbd "C-z") 'undo)
+;; make ctrl-Z redo
+(defalias 'redo 'undo-tree-redo)
+(global-set-key (kbd "C-S-z") 'redo)
 
 ;;;; Python stuff:
 ;; (defvar myPackages
