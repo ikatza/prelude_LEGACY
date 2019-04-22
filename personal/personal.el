@@ -555,6 +555,9 @@ acts like M-x compile."
     (error nil)))
 (setq compilation-finish-functions 'highlight-error-lines)
 
+;;(load "art-fhicl-mode.el" nil t t)
+(add-to-list 'auto-mode-alist '("\\.fcl$" . art-fhicl-mode))
+
 (provide 'personal)
 
 ;;; personal.el ends here
