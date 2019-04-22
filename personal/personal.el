@@ -13,6 +13,12 @@
   (interactive)
   (load-file "~/.emacs.d/init.el"))
 
+;; persistent-scratch
+(prelude-require-package 'persistent-scratch)
+(use-package persistent-scratch
+  :config
+  (persistent-scratch-setup-default))
+
 ;; undo tree mode
 ;; turn on everywhere
 ;;  C-x u to run undo-tree-visualize which opens a second buffer
